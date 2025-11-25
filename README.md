@@ -13,4 +13,4 @@ A domain-specific LLM fine-tuned on the Bhagavad Gita and Advaita Vedanta philos
 ## Dataset
 Trained on 18,000+ Q&A pairs grounded in Vedic scriptures.
 
-Prithviraj6544/gita-advaita-v1
+https://huggingface.co/Prithviraj6544/gita-advaita-v1/tree/main
