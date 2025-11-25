@@ -1,0 +1,51 @@
+mlx-lm
+streamlit
+huggingface-hub
+```
+4.  Upload files: Upload app.py, `prepare_data.py`, `requirements.txt`, and `README.md` to your GitHub repo.
+5.  Copy the Link: This is your GitHub Link for the professor.
+
+Part 2: Deploy to Hugging Face Spaces (The Live Demo)
+
+We will host the app on Hugging Face's free cloud servers.
+
+Step A: Upload ONLY the Adapters
+
+We need to upload your specific training weights (adapters) separately so the cloud can use them.
+
+Create a new Model Repo on Hugging Face named gita-advaita-adapters.
+
+Upload the adapters folder:
+Run this in your terminal:
+
+huggingface-cli upload your-username/gita-advaita-adapters ./adapters .
+
+
+(Replace your-username with your actual HF username).
+This will be very fast (it's small).
+
+Step B: Create the Space
+
+Go to Hugging Face Spaces.
+
+Name: gita-chatbot-live
+
+SDK: Select Streamlit.
+
+Hardware: Keep it CPU Basic (Free).
+
+Create Space.
+
+Step C: Set up the Cloud Code
+
+The cloud needs slightly different code because it uses PyTorch (Linux), not MLX.
+
+In your new Space, scroll down to "Files".
+
+Click "Add file" -> "Create new file" named requirements.txt.
+Paste this:
+
+streamlit
+transformers
+torch
+peft
