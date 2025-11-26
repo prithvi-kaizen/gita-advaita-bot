@@ -17,4 +17,6 @@ hugging face deploy : https://huggingface.co/spaces/Prithviraj6544/gita-chatbot-
 
 (for mac only) https://huggingface.co/Prithviraj6544/gita-advaita-v1/tree/main
 
-RAG based implementation :  https://github.com/Sujato-Dutta/Vedic-Spiritual-Master-Chatbot
+RAG based implementation : https://github.com/Sujato-Dutta/Vedic-Spiritual-Master-Chatbot
+
+RAG model deployment : https://k8xjj6hegddbhysmilqnfz.streamlit.app/
